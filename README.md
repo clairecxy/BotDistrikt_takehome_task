@@ -9,7 +9,7 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://cli.emberjs.com/release/)
 * [Google Chrome](https://google.com/chrome/)
-* [PostgreSQL] (https://www.postgresql.org/download/)
+* [PostgreSQL](https://www.postgresql.org/download/)
 
 ## Installation
 
