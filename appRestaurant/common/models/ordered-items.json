@@ -1,0 +1,30 @@
+{
+  "name": "ordered_items",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "quantity": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "menuItem": {
+      "type": "belongsTo",
+      "model": "menu_item",
+      "foreignKey": "item_name"
+    },
+    "orders": {
+      "type": "belongsTo",
+      "model": "orders",
+      "foreignKey": "order_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

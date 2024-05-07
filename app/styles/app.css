@@ -1,1 +1,159 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@font-face {
+  font-family: Poppins;
+  src: url("/fonts/Poppins");
+}
+
+body {
+  background-color: #f5f5dd;
+  font-family: Poppins, sans-serif;
+}
+
+.poppins-thin {
+  font-family: Poppins, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: Poppins, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.home-container-main {
+  display: flex;
+  flex-direction: row;
+  margin: 5vw;
+}
+
+.home-container-sub {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+
+.home-image {
+  max-width: 85vw;
+  max-height: 85vh;
+  width: 800px;
+}
+
+.home-container-main .header {
+  font-size: 80px;
+}
+
+.home-container-main .text {
+  font-size: 40px;
+}
+
+.home-container-main .contact {
+  font-size: 30px;
+  position: absolute;
+  bottom: 5vh;
+}
+
+.navigation-bar {
+  background-color: #cc9767;
+  height: 10vh;
+  padding: 10px;
+}
+
+.navigation-links {
+  list-style: none;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navigation-links li:last-child {
+  margin-right: 0;
+}
+
+.navigation-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-container-main {
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+  padding: 10px;
+}
+
+.menu-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+ }
+
+.menu-item-content {
+  display: flex;
+  flex-direction: row;
+  min-width: 600px;
+  width: 49%;
+  height: 300px;
+  background-color: #cc9767;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.meun-item-content-sub{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-item-image {
+  border-radius: 10px 0 0 10px;
+}
+
+.menu-item-content-text {
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  margin: 10px;
+}
+
+.menu-item-order-btn {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  text-align: center;
+  text-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (width <= 1200px) {
+  .menu-item-container {
+    flex-direction: column;
+  }
+
+  .menu-item-content {
+    width: 100%;
+    min-width: 250px;
+  }
+}

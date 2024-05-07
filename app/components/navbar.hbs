@@ -1,0 +1,7 @@
+<nav class="navigation-bar">
+  <ul class="navigation-links">
+    {{#each this.links as |link|}}
+      <li>{{#link-to link.route}}{{link.label}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+</nav>

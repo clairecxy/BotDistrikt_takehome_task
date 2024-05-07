@@ -1,0 +1,19 @@
+{{page-title "Menu"}}
+    <div class="menu-container-main">
+        <h1>Our Menu</h1>
+        <div class="menu-item-container">
+            {{#each @model as |item|}}
+            <MenuItem
+            @menu-index = {{item.index}}
+            @menu-image = {{item.item_image}}
+            @menu-name = {{item.item_name}}
+            @menu-desc = {{item.description}}
+            @menu-price = {{item.price}}
+            @menu-quantity = {{this.quantity}}
+            />
+            {{/each}}
+        </div>
+        
+    </div>
+    
+{{outlet}}

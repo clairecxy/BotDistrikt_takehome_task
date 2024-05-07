@@ -24,7 +24,7 @@ You will need the following things properly installed on your computer.
 * The app opens to its home page by default. To view the menu, click on the "menu" button and scroll down.
 
 ## Backend
-* Loopback3 files are found under the 'appRestaurant' folder, and is linked to a locally hosted PostgreSQL server.
+* Loopback3 files are found user the 'appRestaurant' folder, and is linked to a locally hosted PostgreSQL server.
 * To link to your own server, change the details under 'appResaurant/server/datasources.json' and populate the tables using the queries found in the 'backend' folder.
 * Note that Loopback 3 is not compatible with Node v15 and above. This application was built on Node v14.21.3.
 
