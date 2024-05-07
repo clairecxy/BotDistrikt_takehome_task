@@ -1,0 +1,7 @@
+{{#each orderedItems as |item|}}
+  <div>
+    <p>{{item.name}} - ${{item.price}}</p>
+    <button type="button" {{action 'addQuantity' item}}>Add Quantity</button>
+    <p>Quantity: {{item.quantity}}</p>
+  </div>
+{{/each}}

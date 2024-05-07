@@ -1,0 +1,39 @@
+{
+  "name": "orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order_id": {
+      "type": "number",
+      "required": true
+    },
+    "user_id": {
+      "type": "number",
+      "required": true
+    },
+    "total_bill": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "customer",
+      "foreignKey": "user_id"
+    },
+    "menuItems": {
+      "type": "hasMany",
+      "model": "menu_item",
+      "foreignKey": "",
+      "through": "ordered_items"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

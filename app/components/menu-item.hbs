@@ -1,0 +1,20 @@
+<div class="menu-item-content">
+    <img class="menu-item-image" src = {{@menu-image}} alt="{{@menu-name}} Image">
+    <div class="menu-item-content-text">
+        <h2 class="poppins-extrabold">
+            {{@menu-name}}
+            {{@menu-price}}
+        </h2>
+        <p class="poppins-regular">
+            {{@menu-desc}}
+        </p>
+    </div>
+    <div class="menu-item-order-btn">
+        <button type="button" {{on "click" (fn this.incrementCounter @menu-index)}}>Add to Order</button>
+        <p class="poppins-extrabold"> Qty:{{@menu-quantity}}</p>
+        <button type="button" {{on "click" this.removeQuantity}}>Remove from Order</button>
+        
+    </div>
+    
+    
+</div>
